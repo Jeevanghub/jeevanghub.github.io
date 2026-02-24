@@ -476,49 +476,54 @@ footer {
     background-color: #0ea5e9;
 }
 
-/* ============================= */
-/* PROJECTS SECTION */
-/* ============================= */
+/* ===== RESET BASIC LAYOUT ===== */
 
-.projects {
-    padding: 100px 10%;
-    text-align: center;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #111;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section */
+section {
+    padding: 80px 10%;
+}
+
+/* Projects Layout */
 .projects h2 {
-    font-size: 32px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .projects-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .project-card {
-    background: #ffffff;
-    padding: 25px;
-    width: 320px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-/* ========================= */
-/* FORCE PROJECTS HORIZONTAL */
-/* ========================= */
-
-.projects-container {
-    display: flex !important;
-    flex-direction: row !important;   /* 🔥 THIS IS THE KEY */
-    justify-content: center !important;
-    align-items: stretch !important;
-    gap: 40px;
-    flex-wrap: wrap;
+    background: #f5f5f5;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
 }
